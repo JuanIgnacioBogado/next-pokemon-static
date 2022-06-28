@@ -3,10 +3,10 @@ import {NextPage} from 'next';
 
 import {Layout} from 'components/layouts';
 import {NoFavorites} from 'components/ui';
+import {FavoritePokemons} from 'components/pokemon';
 
 import {getFavorites} from 'utils';
 import {FavoritePokemon} from 'interfaces';
-import {FavoritePokemons} from 'components/pokemon';
 
 const FavoritesPage: NextPage = () => {
     const [favoritePokemons, setFavoritePokemons] = useState<FavoritePokemon[]>(
